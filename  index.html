@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="gradient-text">✨ To-Do App ✨</h1>
+    <p id="quote"></p>
+  </header>
+
+  <main>
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter your task...">
+      <button id="addBtn">➕ Add</button>
+      <button id="resetBtn">🔄 Reset</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </main>
+
+  <div class="controls">
+    <button id="darkModeBtn">🌙 Dark Mode</button>
+    <button id="themeBtn">🎨 Switch Theme</button>
+  </div>
+
+  <footer>
+    <p id="taskCounter">Tasks: 0</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
