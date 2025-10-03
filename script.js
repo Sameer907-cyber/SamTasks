@@ -64,6 +64,15 @@ function addTask(taskText, completed = false) {
   taskList.appendChild(li);
   updateCounter();
   saveTasks();
+ 
+ taskInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    const taskText = taskInput.value.trim();
+    if (taskText === "") return;
+    addTask(taskText);
+    taskInput.value = "";
+  }
+});
 
   // Delete button
   li.querySelector(".deleteBtn").addEventListener("click", (e) => {
